@@ -1,0 +1,82 @@
+---
+title: "Find My +"
+publishedAt: '2026-07-14'
+summary: "A Context-Aware Approach to Left Behind Notifications"
+---
+
+# Find My +
+
+## A Context-Aware Approach to Left Behind Notifications
+
+## Problem
+
+Apple's **Find My** helps users locate their devices and alerts them when they leave an item behind. However, today's notifications are based primarily on **location** rather than **context**.
+
+For example, my iPad almost always stays at home. Yet every time I leave home, Find My reminds me that I left it behind. While the notification is technically correct, it isn't useful because the iPad was never expected to come with me.
+
+Over time, repeated irrelevant notifications make it easier to ignore alerts that actually matter.
+
+---
+
+## Proposed Solution
+
+Instead of only detecting whether a device has been left behind, Find My should learn which devices users typically bring to different destinations.
+
+### Example
+
+- When driving to work, I almost always bring my **MacBook** and **AirPods**.
+- When going to the gym, I usually bring only my **AirPods**.
+- My **iPad** almost never leaves home.
+
+If I'm heading to work without my MacBook, Find My could notify me before I arrive.
+
+If I leave my iPad at home, no notification is necessary because that matches my normal routine.
+
+The goal is to notify users only when something they are **expected to bring** is missing.
+
+---
+
+## How It Could Work
+
+Apple already collects many of the signals needed to support this experience on-device, including:
+
+- Significant Locations
+- Find My device locations
+- Bluetooth proximity
+- Apple Maps navigation
+- Time of day
+- Frequent destinations
+- Siri Suggestions and Apple Intelligence
+
+Rather than asking users to manually configure trusted locations, the system could learn their routines over time and adapt automatically.
+
+---
+
+## Additional Opportunity
+
+The same behavioral model could also detect unusual situations.
+
+For example, if my iPad has remained at home for months and suddenly travels with me to the airport, Find My could ask:
+
+> **"Your iPad doesn't usually travel with you. Did you intend to bring it?"**
+
+This helps detect unusual behavior instead of only detecting separation.
+
+---
+
+## Success Metrics
+
+This feature could be evaluated using metrics such as:
+
+- Increased engagement with Left Behind notifications
+- Lower notification dismissal rates
+- Fewer unnecessary notifications
+- Higher user satisfaction with Find My
+
+---
+
+## Why This Matters
+
+Find My already knows where my devices are.
+
+The next step is helping it understand where those devices are supposed to be based on routines. By making notifications context-aware instead of location-aware, Find My could reduce notification fatigue while delivering more useful, personalized alerts—without requiring additional user setup.
