@@ -1,19 +1,23 @@
 const featuredWorkItems = [
   {
     title: 'Melody',
-    subtitle: 'Hackathon project • AI-powered career discovery',
-    summary:
-      'Built an AI agent that helps candidates describe their work in natural language, extracts preferences and hard limits, and connects those signals to relevant opportunities in real time.',
-    outcome:
-      'Creates a more personalized and intuitive way to discover career opportunities.',
+    subtitle: 'Hackathon project • Voice AI career companion',
+    problem:
+      'Resumes and keyword-based job search fail to capture how candidates actually describe their experience, priorities, and career goals.',
+    approach:
+      'Built a real-time voice AI agent with Google ADK, Gemini Live, FastAPI, and WebSockets that conducts conversational interviews, extracts candidate preferences and dealbreakers, and searches live job listings.',
+    solution:
+      'Delivered a conversational career companion that recommends relevant opportunities based on who candidates are—not just what's written on their resume.',
   },
   {
     title: 'Watchtower',
     subtitle: 'Excel-driven operations visibility',
-    summary:
-      'Built a workbook-based operations system using Excel macros, automated reporting, and compliance tracking to monitor device checkout across $75K in assets.',
-    outcome:
-      'Improved visibility into asset liability and reduced manual reporting work by over 10 hours per week for frontline managers.',
+    problem:
+      'Manual asset tracking limited visibility into device accountability and compliance across $75K in equipment.',
+    approach:
+      'Built an Excel-based operations platform using VBA macros, automated reporting, and compliance workflows to centralize asset management.',
+    solution:
+      'Provided real-time operational visibility while reducing manual reporting by over 10 hours per week for frontline managers.',
   },
 ]
 
