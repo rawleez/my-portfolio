@@ -145,7 +145,7 @@ export function BlogPosts() {
           {featuredWorkItems.map((item) => (
             <article
               key={item.title}
-              className={`rounded-xl border border-neutral-200 p-4 transition-colors hover:border-neutral-400 hover:bg-neutral-50 dark:border-neutral-800 dark:hover:border-neutral-600 dark:hover:bg-neutral-900 ${item.title === 'Melody' || item.title === 'Watchtower' ? 'cursor-pointer' : ''}`}
+              className={`card-hover card-lift rounded-xl border border-neutral-200 p-4 transition-colors hover:border-neutral-400 dark:border-neutral-800 dark:hover:border-neutral-600 ${item.title === 'Melody' || item.title === 'Watchtower' ? 'cursor-pointer' : ''}`}
               onClick={() => handleCardClick(item.title)}
             >
               <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
@@ -154,7 +154,7 @@ export function BlogPosts() {
                     <img
                       src="/images/findmy.png"
                       alt="Find My flow"
-                      className="w-12 h-12 rounded-md object-cover"
+                      className="w-12 h-12 rounded-md object-cover icon-glow"
                     />
                   )}
                   <div>
@@ -201,17 +201,22 @@ export function BlogPosts() {
           {productThinkingItems.map((item) => (
             <article
               key={item.title}
-              className={`rounded-xl border border-neutral-200 p-4 transition-colors hover:border-neutral-400 hover:bg-neutral-50 dark:border-neutral-800 dark:hover:border-neutral-600 dark:hover:bg-neutral-900 ${item.title === 'Find My+' || item.title === 'Generation Nest' || item.title === 'Wispr Flow Smart Attribution' || item.title === 'Audible' ? 'cursor-pointer' : ''}`}
+              className={`card-hover card-lift rounded-xl border border-neutral-200 p-4 transition-colors hover:border-neutral-400 dark:border-neutral-800 dark:hover:border-neutral-600 ${item.title === 'Find My+' || item.title === 'Generation Nest' || item.title === 'Wispr Flow Smart Attribution' || item.title === 'Audible' ? 'cursor-pointer' : ''}`}
               onClick={() => handleCardClick(item.title)}
             >
               <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
-                <div>
-                  <p className="font-medium text-neutral-900 dark:text-neutral-100">
-                    {item.title}
-                  </p>
-                  <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                    {item.subtitle}
-                  </p>
+                <div className="flex items-center gap-2">
+                  <span aria-hidden="true" className="text-lg icon-glow">
+                    {item.title === 'Find My+' ? '🔎' : item.title === 'Generation Nest' ? '🏠' : item.title === 'Wispr Flow Smart Attribution' ? '🎙️' : '👂'}
+                  </span>
+                  <div>
+                    <p className="font-medium text-neutral-900 dark:text-neutral-100">
+                      {item.title}
+                    </p>
+                    <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                      {item.subtitle}
+                    </p>
+                  </div>
                 </div>
               </div>
               <p className="mt-3 text-sm leading-7 text-neutral-700 dark:text-neutral-300">
@@ -237,7 +242,7 @@ export function BlogPosts() {
           {experienceItems.map((item) => (
             <article
               key={`${item.company}-${item.title}-${item.period}`}
-              className="rounded-xl border border-neutral-200 p-4 transition-colors hover:border-neutral-400 hover:bg-neutral-50 dark:border-neutral-800 dark:hover:border-neutral-600 dark:hover:bg-neutral-900"
+              className="card-hover card-lift rounded-xl border border-neutral-200 p-4 transition-colors hover:border-neutral-400 dark:border-neutral-800 dark:hover:border-neutral-600"
             >
               <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
                 <div>
